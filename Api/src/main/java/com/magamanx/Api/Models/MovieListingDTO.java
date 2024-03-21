@@ -1,6 +1,7 @@
 package com.magamanx.Api.Models;
 
 import java.util.Date;
+import java.util.List;
 
 public record MovieListingDTO(String title,
                               String description,
@@ -23,4 +24,6 @@ public record MovieListingDTO(String title,
              movie.getAddedDate(),
              movie.getRating());
     }
+
+
 }
