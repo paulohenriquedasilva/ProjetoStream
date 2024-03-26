@@ -1,4 +1,4 @@
-package com.magamanx.Api.Infra;
+package com.magamanx.Api.Infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;

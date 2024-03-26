@@ -1,5 +1,6 @@
 package com.magamanx.Api.Models;
 
+import com.magamanx.Api.DTO.MovieRegistrationDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

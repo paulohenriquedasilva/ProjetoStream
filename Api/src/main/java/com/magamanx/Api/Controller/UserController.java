@@ -1,7 +1,6 @@
 package com.magamanx.Api.Controller;
 
-import com.magamanx.Api.Models.User;
-import com.magamanx.Api.Models.UserRegistrationDTO;
+import com.magamanx.Api.DTO.UserRegistrationDTO;
 import com.magamanx.Api.Service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +15,7 @@ public class UserController {
     private UserService userService;
 
     public void register (@RequestBody @Valid UserRegistrationDTO data){
+
         userService.register(data);
     }
 

@@ -1,7 +1,6 @@
 package com.magamanx.Api.Controller;
 
-import com.magamanx.Api.Models.MovieListingDTO;
-import com.magamanx.Api.Models.SerieListingDTO;
+import com.magamanx.Api.DTO.SerieListingDTO;
 import com.magamanx.Api.Service.SerieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

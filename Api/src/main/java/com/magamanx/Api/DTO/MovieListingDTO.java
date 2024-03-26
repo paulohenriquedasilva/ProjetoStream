@@ -1,7 +1,8 @@
-package com.magamanx.Api.Models;
+package com.magamanx.Api.DTO;
+
+import com.magamanx.Api.Models.Movie;
 
 import java.util.Date;
-import java.util.List;
 
 public record MovieListingDTO(String title,
                               String description,

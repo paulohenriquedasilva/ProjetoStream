@@ -1,14 +1,13 @@
 package com.magamanx.Api.Service;
 
 import com.magamanx.Api.Models.Movie;
-import com.magamanx.Api.Models.MovieListingDTO;
-import com.magamanx.Api.Models.MovieRegistrationDTO;
+import com.magamanx.Api.DTO.MovieListingDTO;
+import com.magamanx.Api.DTO.MovieRegistrationDTO;
 import com.magamanx.Api.Repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

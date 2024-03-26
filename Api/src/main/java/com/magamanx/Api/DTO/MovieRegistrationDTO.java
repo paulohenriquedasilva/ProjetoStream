@@ -1,4 +1,4 @@
-package com.magamanx.Api.Models;
+package com.magamanx.Api.DTO;
 
 import jakarta.validation.constraints.NotBlank;
 

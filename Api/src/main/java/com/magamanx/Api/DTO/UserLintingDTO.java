@@ -1,4 +1,4 @@
-package com.magamanx.Api.Models;
+package com.magamanx.Api.DTO;
 
 public record UserLintingDTO(
     String username,

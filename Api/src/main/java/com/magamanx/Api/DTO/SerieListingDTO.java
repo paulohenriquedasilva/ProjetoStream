@@ -1,4 +1,6 @@
-package com.magamanx.Api.Models;
+package com.magamanx.Api.DTO;
+
+import com.magamanx.Api.Models.Serie;
 
 import java.util.Date;
 

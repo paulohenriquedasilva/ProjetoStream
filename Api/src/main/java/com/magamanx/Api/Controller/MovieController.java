@@ -1,9 +1,9 @@
 package com.magamanx.Api.Controller;
 
 import com.magamanx.Api.Models.Movie;
-import com.magamanx.Api.Models.MovieDataDetailingDTO;
-import com.magamanx.Api.Models.MovieListingDTO;
-import com.magamanx.Api.Models.MovieRegistrationDTO;
+import com.magamanx.Api.DTO.MovieDataDetailingDTO;
+import com.magamanx.Api.DTO.MovieListingDTO;
+import com.magamanx.Api.DTO.MovieRegistrationDTO;
 import com.magamanx.Api.Service.MovieService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
