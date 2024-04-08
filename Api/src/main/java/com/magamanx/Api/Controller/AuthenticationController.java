@@ -1,6 +1,9 @@
 package com.magamanx.Api.Controller;
 
 import com.magamanx.Api.DTO.DataAuthentication;
+import com.magamanx.Api.Infra.security.DadosTokenJWT;
+import com.magamanx.Api.Infra.security.TokenService;
+import com.magamanx.Api.Models.User;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,11 +21,16 @@ public class AuthenticationController {
     @Autowired
     private AuthenticationManager manager;
 
+    @Autowired
+    private TokenService tokenService;
+
     @PostMapping
     public ResponseEntity efetuarLogin(@RequestBody @Valid DataAuthentication dados) {
-        var token = new UsernamePasswordAuthenticationToken(dados.userName(), dados.password());
-        var authentication =  manager.authenticate(token);
+        var authenticationToken = new UsernamePasswordAuthenticationToken(dados.userName(), dados.password());
+        var authentication =  manager.authenticate(authenticationToken);
 
-        return ResponseEntity.ok().build();
+        var tokenJWT = tokenService.gerarToken((User) authentication.getPrincipal());
+
+        return ResponseEntity.ok(new DadosTokenJWT(tokenJWT));
     }
 }
